@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>STGC - Sistema de Gerenciamento de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>STGC - Sistema de Gerenciamento de Cadastro</h1>
+        <form>
+            <label class="label">Nome completo</label>
+            <input type="text" class="input" id="nome" />
+            <label class="label">Endereço</label>
+            <input type="text" class="input" id="endereco" />
+            <label class="label">Telefone</label>
+            <input type="text" class="input" id="telefone" />
+            <label class="label">E-mail</label>
+            <input type="email" class="input" id="email" />
+            <label class="label">Conta bancária</label>
+            <input type="text" class="input" id="conta_bancaria" />
+            <label class="label">Data de nascimento</label>
+            <input type="date" class="input" id="data_nascimento" />
+            <label class="label">Data de cadastro</label>
+            <input type="date" class="input" id="data_cadastro" />
+            <button class="button" id="pesquisar">Pesquisar</button>
+            <button class="button" id="salvar">Salvar</button>
+            <button class="button" id="editar">Editar</button>
+            <button class="button" id="excluir">Excluir</button>
+        </form>
+    </div>
+
+    <!-- Modal para edição -->
+    <div id="modal-editar" style="display: none;">
+        <div class="container">
+            <h2>Editar Dados</h2>
+            <form>
+                <label class="label">ID:</label>
+                <input type="text" class="input" id="id-editar" />
+                <label class="label">Nome completo</label>
+                <input type="text" class="input" id="nome-editar" />
+                <label class="label">Endereço</label>
+                <input type="text" class="input" id="endereco-editar" />
+                <label class="label">Telefone</label>
+                <input type="text" class="input" id="telefone-editar" />
+                <label class="label">E-mail</label>
+                <input type="email" class="input" id="email-editar" />
+                <label class="label">Conta bancária</label>
+                <input type="text" class="input" id="conta_bancaria-editar" />
+                <label class="label">Data de nascimento</label>
+                <input type="date" class="input" id="data_nascimento-editar" />
+                <label class="label">Data de cadastro</label>
+                <input type="date" class="input" id="data_cadastro-editar" />
+                <button class="button" id="salvar-editar">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
